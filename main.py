@@ -24,12 +24,8 @@ for i in range(28):
         urok_time = 30
     if bell_count % 2 == 0:
         time_full=hour_p*60+minute_p+urok_time-prazdniki
-        print("Чёт")
     if bell_count % 2 != 0:
         time_full=hour_p*60+minute_p+peremena_time  #смотрим, что сейчас, урок(40 минут) или перемена(10 минут) и прибавляем, чтобы узнать время следующего звонка
-        print("НеЧёт")
-    print(time_full)
-    print("Урок", urok_time)
     hour_p=time_full//60 
     bell_count+=1
     minute_p=time_full%60 #находим время следующего звонка
